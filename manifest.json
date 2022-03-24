@@ -1,0 +1,18 @@
+{
+  "name": "EKursy cleaner",
+  "description": "clear kursy",
+  "manifest_version": 3,
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "run_at": "document_end",
+      "all_frames": true,
+      "matches": [
+        "https://ekursy.put.poznan.pl/*"
+      ],
+      "js": [
+        "cleaner.js"
+      ]
+    }
+  ]
+}
